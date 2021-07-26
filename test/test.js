@@ -6,7 +6,9 @@ describe("existence", () => {
     expect(api.Element.webkitMatchesSelector.__compat.support).toBeDefined();
   });
   it("api.__mixins.ParentNode", () => {
-    expect(api.__mixins.ParentNode).toBeDefined();
+    expect(
+      api.__mixins.ParentNode.append.Document.__compat.support
+    ).toBeDefined();
   });
   it("api.CSSStyleDeclaration.gridTemplate", () => {
     expect(api.CSSStyleDeclaration.gridTemplate.__compat.support).toBeDefined();
@@ -18,10 +20,15 @@ describe("existence", () => {
   // TODO: api.CSSStyleDeclaration.gridGap
 });
 
-describe("structure", () => {
-  it("mixin support is a record", () => {
+describe("merging partial mixins", () => {
+  it("api.__mixins.DocumentOrShadowRoot.activeElement", () => {
     expect(
-      api.__mixins.ParentNode.append.Document.__compat.support
+      api.__mixins.DocumentOrShadowRoot.activeElement.Document.__compat.support
+    ).toBeDefined();
+  });
+  it("api.__mixins.DocumentOrShadowRoot.getAnimations", () => {
+    expect(
+      api.__mixins.DocumentOrShadowRoot.getAnimations.Document.__compat.support
     ).toBeDefined();
   });
 });
