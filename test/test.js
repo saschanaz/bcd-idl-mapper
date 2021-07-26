@@ -40,6 +40,12 @@ describe("copying mixin from api", () => {
       api.__mixins.GlobalEventHandlers.onabort.__compat.support
     ).toBeDefined();
   });
+  it("api.__mixins.WindowEventHandlers.ongamepadconnected", () => {
+    expect(
+      api.__mixins.WindowEventHandlers.ongamepadconnected.Window.__compat
+        .support
+    ).toBeDefined();
+  });
 });
 
 describe("original data", () => {
