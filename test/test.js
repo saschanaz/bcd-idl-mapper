@@ -12,12 +12,23 @@ describe("existence", () => {
   });
   it("api.CSSStyleDeclaration.gridTemplate", () => {
     expect(api.CSSStyleDeclaration.gridTemplate).toBeDefined();
-    expect(api.CSSStyleDeclaration.gridTemplate).toBeDefined();
+    expect(api.CSSStyleDeclaration.gridTemplate.__compat.support).toBeDefined();
   });
   it("api.CSSStyleDeclaration.wordWrap", () => {
     expect(api.CSSStyleDeclaration.wordWrap).toBeDefined();
-    expect(api.CSSStyleDeclaration.wordWrap).toBeDefined();
+    expect(api.CSSStyleDeclaration.wordWrap.__compat.support).toBeDefined();
   });
 
   // TODO: api.CSSStyleDeclaration.gridGap
+});
+
+describe("original data", () => {
+  it("api.DOMException", () => {
+    expect(api.DOMException).toBeDefined();
+    expect(api.DOMException.__compat.support).toBeDefined();
+  });
+  it("api.CSSStyleDeclaration.overflowWrap", () => {
+    expect(api.CSSStyleDeclaration.overflowWrap).toBeDefined();
+    expect(api.CSSStyleDeclaration.overflowWrap.__compat.support).toBeDefined();
+  });
 });

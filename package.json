@@ -4,7 +4,7 @@
   "description": "Retrieves browser compatibility data by IDL name, including mixins and legacy aliases.",
   "main": "index.js",
   "scripts": {
-    "test": "npm run lint",
+    "test": "npm run lint && npx mocha",
     "lint": "eslint ."
   },
   "repository": {
