@@ -1,6 +1,6 @@
 {
   "name": "bcd-idl-mapper",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Retrieves browser compatibility data by IDL name, including mixins and legacy aliases.",
   "main": "index.js",
   "scripts": {
