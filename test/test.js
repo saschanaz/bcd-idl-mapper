@@ -4,6 +4,9 @@ import expect from "expect";
 describe("existence", () => {
   it("api.Element.webkitMatchesSelector", () => {
     expect(api.Element.webkitMatchesSelector.__compat.support).toBeDefined();
+    expect(
+      api.Element.webkitMatchesSelector.__compat.support.chrome.alternative_name
+    ).not.toBeDefined();
   });
   it("api.__mixins.ParentNode", () => {
     expect(
