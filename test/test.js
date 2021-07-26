@@ -31,4 +31,8 @@ describe("original data", () => {
     expect(api.CSSStyleDeclaration.overflowWrap).toBeDefined();
     expect(api.CSSStyleDeclaration.overflowWrap.__compat.support).toBeDefined();
   });
+  it("api.Event", () => {
+    expect(api.Event).toBeDefined();
+    expect(api.Event.__compat.support).toBeDefined();
+  });
 });
