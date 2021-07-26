@@ -2,12 +2,6 @@ import api from "../index.js";
 import expect from "expect";
 
 describe("existence", () => {
-  it("api.Element.webkitMatchesSelector", () => {
-    expect(api.Element.webkitMatchesSelector.__compat.support).toBeDefined();
-    expect(
-      api.Element.webkitMatchesSelector.__compat.support.chrome.alternative_name
-    ).not.toBeDefined();
-  });
   it("api.__mixins.ParentNode", () => {
     expect(
       api.__mixins.ParentNode.append.Document.__compat.support
@@ -21,6 +15,18 @@ describe("existence", () => {
   });
 
   // TODO: api.CSSStyleDeclaration.gridGap
+});
+
+describe("alternative name", () => {
+  it("api.Element.webkitMatchesSelector", () => {
+    expect(api.Element.webkitMatchesSelector.__compat.support).toBeDefined();
+    expect(
+      api.Element.webkitMatchesSelector.__compat.support.chrome.alternative_name
+    ).not.toBeDefined();
+    expect(
+      api.Element.matches.__compat.support.chrome[1].alternative_name
+    ).toBeDefined();
+  });
 });
 
 describe("merging partial mixins", () => {
