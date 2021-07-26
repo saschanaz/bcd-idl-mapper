@@ -33,6 +33,15 @@ describe("merging partial mixins", () => {
   });
 });
 
+// This will be changed after https://github.com/mdn/browser-compat-data/pull/11518
+describe("copying mixin from api", () => {
+  it("api.__mixins.GlobalEventHandlers.onabort", () => {
+    expect(
+      api.__mixins.GlobalEventHandlers.onabort.__compat.support
+    ).toBeDefined();
+  });
+});
+
 describe("original data", () => {
   it("api.DOMException", () => {
     expect(api.DOMException.__compat.support).toBeDefined();
