@@ -31,6 +31,16 @@ describe("merging partial mixins", () => {
       api.__mixins.DocumentOrShadowRoot.getAnimations.Document.__compat.support
     ).toBeDefined();
   });
+  it("api.__mixins.NavigatorID.appCodeName", () => {
+    expect(
+      api.__mixins.NavigatorID.appCodeName.Navigator.__compat.support
+    ).toBeDefined();
+  });
+  it("api.__mixins.NavigatorID.oscpu", () => {
+    expect(
+      api.__mixins.NavigatorID.oscpu.Navigator.__compat.support
+    ).toBeDefined();
+  });
 });
 
 // This will be changed after https://github.com/mdn/browser-compat-data/pull/11518
