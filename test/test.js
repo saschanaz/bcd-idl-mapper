@@ -37,6 +37,13 @@ describe("alternative name", () => {
       api.CSSStyleDeclaration.webkitPerspective.__compat.support
     ).toBeDefined();
   });
+
+  // no direct __compat object
+  it("api.CSSStyleDeclaration.webkitJustifyContent", () => {
+    expect(
+      api.CSSStyleDeclaration.webkitJustifyContent.__compat.support
+    ).toBeDefined();
+  });
 });
 
 describe("merging partial mixins", () => {
