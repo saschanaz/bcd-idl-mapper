@@ -27,6 +27,13 @@ describe("alternative name", () => {
       api.Element.matches.__compat.support.chrome[1].alternative_name
     ).toBeDefined();
   });
+
+  // uses prefix
+  it("api.CSSStyleDeclaration.webkitPerspective", () => {
+    expect(
+      api.CSSStyleDeclaration.webkitPerspective.__compat.support
+    ).toBeDefined();
+  });
 });
 
 describe("merging partial mixins", () => {
