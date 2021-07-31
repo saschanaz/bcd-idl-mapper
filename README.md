@@ -1,6 +1,6 @@
 # bcd-idl-mapper
 
-This exposes a modified `api` field value of @mdn/browser-compat-data as the default export, with the following changes:
+This exposes a modified `api` field value of [@mdn/browser-compat-data](https://www.npmjs.com/package/@mdn/browser-compat-data) as the default export, with the following changes:
 
 * Mixins are in `__mixins`, e.g. `api.__mixins.WindowEventHandlers.onstorage`.
   * Each member data have no direct `__compat`
