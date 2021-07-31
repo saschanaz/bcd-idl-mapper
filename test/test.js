@@ -24,6 +24,9 @@ describe("alternative name", () => {
       api.Element.webkitMatchesSelector.__compat.support.chrome.alternative_name
     ).not.toBeDefined();
     expect(
+      api.Element.webkitMatchesSelector.__compat.status.preferred_name
+    ).toBeDefined();
+    expect(
       api.Element.matches.__compat.support.chrome[1].alternative_name
     ).toBeDefined();
   });
