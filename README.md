@@ -9,3 +9,10 @@ This exposes a modified `api` field value of [@mdn/browser-compat-data](https://
 * `alternative_name` and `prefix` are mapped as separate items, e.g. `api.Navigator.clientInformation` and `api.CSSStyleDeclaration.webkitJustifyContent`.
 
 `.__compat.support` object has one more field named `preferred_name`, which only exists in items generated from `alternative_name` or `prefix`.
+
+## Dependencies
+
+This package has two peer dependencies, which means you should explicitly install them together.
+
+* [@mdn/browser-compat-data](https://www.npmjs.com/package/@mdn/browser-compat-data)
+* [@webref/idl](https://www.npmjs.com/package/@webref/idl)
