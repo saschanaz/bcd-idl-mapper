@@ -44,6 +44,12 @@ describe("alternative name", () => {
       api.CSSStyleDeclaration.webkitJustifyContent.__compat.support
     ).toBeDefined();
   });
+
+  it("api.__mixins.GlobalEventHandlers.onwebkitanimationend", () => {
+    expect(
+      api.__mixins.GlobalEventHandlers.onwebkitanimationend.__compat.support
+    ).toBeDefined();
+  });
 });
 
 describe("merging partial mixins", () => {
