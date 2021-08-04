@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/saschanaz/bcd-getter.git"
+    "url": "git+https://github.com/saschanaz/bcd-idl-mapper.git"
   },
   "keywords": [
     "bcd",
@@ -20,9 +20,9 @@
   "author": "Kagami Sascha Rosylight <saschanaz@outlook.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/saschanaz/bcd-getter/issues"
+    "url": "https://github.com/saschanaz/bcd-idl-mapper/issues"
   },
-  "homepage": "https://github.com/saschanaz/bcd-getter#readme",
+  "homepage": "https://github.com/saschanaz/bcd-idl-mapper#readme",
   "type": "module",
   "peerDependencies": {
     "@mdn/browser-compat-data": "^3.3.12",
