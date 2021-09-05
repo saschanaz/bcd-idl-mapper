@@ -25,20 +25,20 @@
   "homepage": "https://github.com/saschanaz/bcd-idl-mapper#readme",
   "type": "module",
   "peerDependencies": {
-    "@mdn/browser-compat-data": "^3.3.12 || ^4.0.0",
-    "@webref/idl": "^2.2.9"
+    "@mdn/browser-compat-data": "^4.0.2",
+    "@webref/idl": "^2.3.0"
   },
   "dependencies": {
     "webidl2": "^24.1.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.14.8",
-    "@babel/eslint-parser": "^7.14.7",
+    "@babel/core": "^7.15.5",
+    "@babel/eslint-parser": "^7.15.4",
     "@babel/plugin-syntax-top-level-await": "^7.14.5",
-    "eslint": "^7.31.0",
+    "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^3.4.0",
-    "expect": "^27.0.6",
-    "mocha": "^9.0.3"
+    "eslint-plugin-prettier": "^4.0.0",
+    "expect": "^27.1.0",
+    "mocha": "^9.1.1"
   }
 }

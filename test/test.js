@@ -90,6 +90,19 @@ describe("copying mixin from api", () => {
   });
 });
 
+describe("globals", () => {
+  it("api.__mixins.WindowOrWorkerGlobalScope.isSecureContext", () => {
+    expect(
+      api.__mixins.WindowOrWorkerGlobalScope.isSecureContext.Window.__compat
+        .support
+    ).toBeDefined();
+    expect(
+      api.__mixins.WindowOrWorkerGlobalScope.isSecureContext.WorkerGlobalScope
+        .__compat.support
+    ).toBeDefined();
+  });
+});
+
 describe("original data", () => {
   it("api.DOMException", () => {
     expect(api.DOMException.__compat.support).toBeDefined();
