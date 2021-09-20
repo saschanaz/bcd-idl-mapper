@@ -13,8 +13,6 @@ describe("existence", () => {
   it("api.CSSStyleDeclaration.wordWrap", () => {
     expect(api.CSSStyleDeclaration.wordWrap.__compat.support).toBeDefined();
   });
-
-  // TODO: api.CSSStyleDeclaration.gridGap
 });
 
 describe("alternative name", () => {
@@ -121,5 +119,11 @@ describe("js data", () => {
   });
   it("api.WebAssembly.Module.exports", () => {
     expect(api.WebAssembly.Module.exports.__compat.support).toBeDefined();
+  });
+});
+
+describe("multiple context", () => {
+  it("api.CSSStyleDeclaration.gridGap", () => {
+    expect(api.CSSStyleDeclaration.gridGap.__compat.support).toBeDefined();
   });
 });
