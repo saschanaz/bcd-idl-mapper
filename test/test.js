@@ -114,3 +114,12 @@ describe("original data", () => {
     expect(api.Event.__compat.support).toBeDefined();
   });
 });
+
+describe("js data", () => {
+  it("api.WebAssembly.compileStreaming", () => {
+    expect(api.WebAssembly.compileStreaming.__compat.support).toBeDefined();
+  });
+  it("api.WebAssembly.Module.exports", () => {
+    expect(api.WebAssembly.Module.exports.__compat.support).toBeDefined();
+  });
+});
