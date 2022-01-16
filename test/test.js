@@ -132,4 +132,7 @@ describe("event attributes", () => {
   it("api.VisualViewport.onresize", () => {
     expect(api.VisualViewport.onresize.__compat.support).toBeDefined();
   });
+  it("api.WebSocket.onerror", () => {
+    expect(api.WebSocket.onerror.__compat.support).toBeDefined();
+  });
 });
