@@ -127,3 +127,9 @@ describe("multiple context", () => {
     expect(api.CSSStyleDeclaration.gridGap.__compat.support).toBeDefined();
   });
 });
+
+describe("event attributes", () => {
+  it("api.VisualViewport.onresize", () => {
+    expect(api.VisualViewport.onresize.__compat.support).toBeDefined();
+  });
+});
