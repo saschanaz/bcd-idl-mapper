@@ -1,5 +1,5 @@
 import bcd from "@mdn/browser-compat-data";
-import mixins from "./lib/mixin.js";
+import resolveMixins from "./lib/mixin.js";
 import css from "./lib/css.js";
 import resolveAlternatives from "./lib/alternative-name.js";
 import jsidl from "./lib/jsidl.js";
@@ -10,7 +10,7 @@ resolveEvents(resolving);
 resolveAlternatives(resolving);
 
 export default {
-  __mixins: mixins,
+  __mixins: resolveMixins(resolving),
   ...resolving,
   CSSStyleDeclaration: { ...bcd.api.CSSStyleDeclaration, ...css },
   ...jsidl,
