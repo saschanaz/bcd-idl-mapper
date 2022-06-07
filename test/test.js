@@ -1,5 +1,5 @@
 import api from "../index.js";
-import expect from "expect";
+import { expect } from "expect";
 
 describe("existence", () => {
   it("api.__mixins.ParentNode", () => {
