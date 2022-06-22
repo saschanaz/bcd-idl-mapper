@@ -1,4 +1,4 @@
-import { PrimaryIdentifier } from "@mdn/browser-compat-data/types";
+import { Identifier } from "@mdn/browser-compat-data/types";
 export * from "@mdn/browser-compat-data/types";
 
 declare module "@mdn/browser-compat-data/types" {
@@ -7,5 +7,5 @@ declare module "@mdn/browser-compat-data/types" {
   }
 }
 
-declare var api: PrimaryIdentifier;
+declare var api: Identifier;
 export default api;
