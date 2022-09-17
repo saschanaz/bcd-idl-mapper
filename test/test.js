@@ -45,7 +45,14 @@ describe("alternative name", () => {
 
   it("api.__mixins.GlobalEventHandlers.onwebkitanimationend", () => {
     expect(
-      api.__mixins.GlobalEventHandlers.onwebkitanimationend.__compat.support
+      api.__mixins.GlobalEventHandlers.onwebkitanimationend.Element.__compat
+        .support
+    ).toBeDefined();
+  });
+  it("api.__mixins.GlobalEventHandlers.onwebkittransitionend", () => {
+    expect(
+      api.__mixins.GlobalEventHandlers.onwebkittransitionend.Element.__compat
+        .support
     ).toBeDefined();
   });
 });
@@ -77,6 +84,11 @@ describe("copying mixin from api", () => {
   it("api.__mixins.GlobalEventHandlers.onabort", () => {
     expect(
       api.__mixins.GlobalEventHandlers.onabort.HTMLMediaElement.__compat.support
+    ).toBeDefined();
+  });
+  it("api.__mixins.GlobalEventHandlers.onselectstart", () => {
+    expect(
+      api.__mixins.GlobalEventHandlers.onselectstart.Node.__compat.support
     ).toBeDefined();
   });
   it("api.__mixins.WindowEventHandlers.ongamepadconnected", () => {
