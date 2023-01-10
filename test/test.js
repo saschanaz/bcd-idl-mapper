@@ -97,10 +97,9 @@ describe("copying mixin from api", () => {
         .support
     ).toBeDefined();
   });
-  it("api.__mixins.DocumentAndElementEventHandlers.oncopy", () => {
+  it("api.__mixins.GlobalEventHandlers.oncopy", () => {
     expect(
-      api.__mixins.DocumentAndElementEventHandlers.oncopy.Element.__compat
-        .support
+      api.__mixins.GlobalEventHandlers.oncopy.Element.__compat.support
     ).toBeDefined();
   });
 });
