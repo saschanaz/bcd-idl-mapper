@@ -1,6 +1,6 @@
 {
   "name": "bcd-idl-mapper",
-  "version": "2.2.2",
+  "version": "2.3.0",
   "description": "Retrieves browser compatibility data by IDL name, including mixins and legacy aliases.",
   "main": "index.js",
   "scripts": {
@@ -25,8 +25,8 @@
   "homepage": "https://github.com/saschanaz/bcd-idl-mapper#readme",
   "type": "module",
   "peerDependencies": {
-    "@mdn/browser-compat-data": "^5.2.26",
-    "@webref/idl": "^3.23.0"
+    "@mdn/browser-compat-data": "^5.3.31",
+    "@webref/idl": "^3.39.2"
   },
   "dependencies": {
     "webidl2": "^24.2.2"
