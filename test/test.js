@@ -131,10 +131,14 @@ describe("original data", () => {
 
 describe("js data", () => {
   it("api.WebAssembly.compileStreaming", () => {
-    expect(api.WebAssembly.compileStreaming.__compat.support).toBeDefined();
+    expect(
+      api.WebAssembly.compileStreaming_static.__compat.support
+    ).toBeDefined();
   });
   it("api.WebAssembly.Module.exports", () => {
-    expect(api.WebAssembly.Module.exports.__compat.support).toBeDefined();
+    expect(
+      api.WebAssembly.Module.exports_static.__compat.support
+    ).toBeDefined();
   });
 });
 
