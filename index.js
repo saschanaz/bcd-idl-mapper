@@ -1,4 +1,4 @@
-import bcd from "@mdn/browser-compat-data" assert { type: "json" };
+import bcd from "@mdn/browser-compat-data" with { type: "json" };
 import resolveMixins from "./lib/mixin.js";
 import css from "./lib/css.js";
 import resolveAlternatives from "./lib/alternative-name.js";

@@ -29,16 +29,16 @@
     "@webref/idl": "^3.39.2"
   },
   "dependencies": {
-    "webidl2": "^24.2.2"
+    "webidl2": "^24.4.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.12",
-    "@babel/eslint-parser": "^7.19.1",
-    "@babel/plugin-syntax-import-assertions": "^7.20.0",
-    "eslint": "^8.31.0",
-    "eslint-config-prettier": "^8.6.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "expect": "^29.3.1",
-    "mocha": "^10.2.0"
+    "@babel/core": "^7.25.2",
+    "@babel/eslint-parser": "^7.25.1",
+    "@babel/plugin-syntax-import-attributes": "^7.24.7",
+    "eslint": "^9.9.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "expect": "^29.7.0",
+    "mocha": "^10.7.3"
   }
 }
