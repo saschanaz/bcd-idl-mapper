@@ -12,6 +12,6 @@ resolveAlternatives(resolving);
 export default {
   __mixins: resolveMixins(resolving),
   ...resolving,
-  CSSStyleDeclaration: { ...bcd.api.CSSStyleDeclaration, ...css },
+  CSSStyleProperties: { ...bcd.api.CSSStyleProperties, ...css },
   ...jsidl,
 };

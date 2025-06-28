@@ -7,11 +7,11 @@ describe("existence", () => {
       api.__mixins.ParentNode.append.Document.__compat.support,
     ).toBeDefined();
   });
-  it("api.CSSStyleDeclaration.gridTemplate", () => {
-    expect(api.CSSStyleDeclaration.gridTemplate.__compat.support).toBeDefined();
+  it("api.CSSStyleProperties.gridTemplate", () => {
+    expect(api.CSSStyleProperties.gridTemplate.__compat.support).toBeDefined();
   });
-  it("api.CSSStyleDeclaration.wordWrap", () => {
-    expect(api.CSSStyleDeclaration.wordWrap.__compat.support).toBeDefined();
+  it("api.CSSStyleProperties.wordWrap", () => {
+    expect(api.CSSStyleProperties.wordWrap.__compat.support).toBeDefined();
   });
 });
 
@@ -31,16 +31,16 @@ describe("alternative name", () => {
   });
 
   // uses prefix
-  it("api.CSSStyleDeclaration.webkitPerspective", () => {
+  it("api.CSSStyleProperties.webkitPerspective", () => {
     expect(
-      api.CSSStyleDeclaration.webkitPerspective.__compat.support,
+      api.CSSStyleProperties.webkitPerspective.__compat.support,
     ).toBeDefined();
   });
 
   // no direct __compat object
-  it("api.CSSStyleDeclaration.webkitJustifyContent", () => {
+  it("api.CSSStyleProperties.webkitJustifyContent", () => {
     expect(
-      api.CSSStyleDeclaration.webkitJustifyContent.__compat.support,
+      api.CSSStyleProperties.webkitJustifyContent.__compat.support,
     ).toBeDefined();
   });
 
@@ -123,8 +123,8 @@ describe("original data", () => {
   it("api.DOMException", () => {
     expect(api.DOMException.__compat.support).toBeDefined();
   });
-  it("api.CSSStyleDeclaration.overflowWrap", () => {
-    expect(api.CSSStyleDeclaration.overflowWrap.__compat.support).toBeDefined();
+  it("api.CSSStyleProperties.overflowWrap", () => {
+    expect(api.CSSStyleProperties.overflowWrap.__compat.support).toBeDefined();
   });
   it("api.Event", () => {
     expect(api.Event.__compat.support).toBeDefined();
@@ -145,8 +145,8 @@ describe("js data", () => {
 });
 
 describe("multiple context", () => {
-  it("api.CSSStyleDeclaration.gridGap", () => {
-    expect(api.CSSStyleDeclaration.gridGap.__compat.support).toBeDefined();
+  it("api.CSSStyleProperties.gridGap", () => {
+    expect(api.CSSStyleProperties.gridGap.__compat.support).toBeDefined();
   });
 });
 
