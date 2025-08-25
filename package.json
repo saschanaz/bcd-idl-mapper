@@ -25,7 +25,7 @@
   "homepage": "https://github.com/saschanaz/bcd-idl-mapper#readme",
   "type": "module",
   "peerDependencies": {
-    "@mdn/browser-compat-data": "^6.0.24",
+    "@mdn/browser-compat-data": "^6.0.24 || ^7.0.0",
     "@webref/idl": "^3.65.0"
   },
   "dependencies": {
